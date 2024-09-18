@@ -13,11 +13,9 @@ class NotificationHandler(private val context: Context) {
     // SIMPLE NOTIFICATION
     fun showSimpleNotification() {
         val notification = NotificationCompat.Builder(context, notificationChannelID)
-            .setContentTitle("Simple Notification")
-            .setContentText("Message or text with notification")
-            .setSmallIcon(R.drawable.notification)
-            .setPriority(NotificationManager.IMPORTANCE_HIGH)
-            .setAutoCancel(true)
+            .setContentTitle("Wing Transfer 3000 Riel")
+            .setContentText("ទឹកប្រាក់របស់អ្នកត្រូវបានដក ")
+            .setSmallIcon(R.drawable.wing)
             .build()  // finalizes the creation
         notificationManager.notify(Random.nextInt(), notification)
     }
