@@ -61,7 +61,13 @@ dependencies {
     implementation(libs.androidx.material3)
     // Notification
     implementation("com.google.accompanist:accompanist-permissions:0.31.1-alpha")
-
+    // One Signal SDK Dependency
+    implementation("com.onesignal:OneSignal:[5.0.0, 5.99.99]")
+    implementation ("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.constraintlayout)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
